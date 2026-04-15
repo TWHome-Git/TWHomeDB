@@ -1,0 +1,57 @@
+name: Daily Data Update
+on:
+  schedule:
+    - cron: '0 0 * * *' # 한국 시간 오전 11시
+  workflow_dispatch:
+
+# 서버에 쓰기 권한 부여
+permissions:
+  contents: write
+
+jobs:
+  build_and_run:
+    runs-on: windows-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x' # 사용 중인 .NET 10 버전 유지
+
+    - name: Build Project
+      run: dotnet build TWETA/TWETA.csproj
+
+    - name: Install Playwright Browsers
+      shell: pwsh
+      run: |
+        # TWETA/bin 폴더 내에서 playwright.ps1 파일을 찾아 실행합니다.
+        $script = Get-ChildItem -Path "TWETA/bin" -Filter "playwright.ps1" -Recurse | Select-Object -First 1
+        if ($script) {
+            Write-Host "Found script at: $($script.FullName)"
+            & $script.FullName install chromium
+        } else {
+            Write-Error "playwright.ps1 파일을 찾을 수 없습니다. 빌드가 성공했는지 확인하세요."
+            exit 1
+        }
+
+    - name: Run Scraper
+      run: dotnet run --project TWETA/TWETA.csproj
+    - name: Commit and Push changes
+      shell: bash
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # 파일 확인 및 추가 (경로에 맞게 조정 가능)
+        git add **/eta_ranking.json || git add eta_ranking.json || true
+        
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m "Auto-update: $(date +'%Y-%m-%d')"
+          git push origin main
+        else
+          echo "No changes to commit"
+        fi
