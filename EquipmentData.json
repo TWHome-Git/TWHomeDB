@@ -9210,9 +9210,9 @@
                          "image":  "/images/Items/인퍼널_아머.png"
                      },
                      {
-                         "name":  "프시키의 파편 - 파괴",
+                         "name":  "프시키의 파편 - 단절",
                          "count":  4,
-                         "image":  "/images/Items/프시키의_파편_-_파괴.png"
+                         "image":  "/images/Items/프시키의_파편_-_단절.png"
                      },
                      {
                          "name":  "시트린",
@@ -9276,14 +9276,14 @@
                          "image":  "/images/Items/아퀼루스_아머.png"
                      },
                      {
-                         "name":  "고대 기사의 무기 파편",
+                         "name":  "고대 기사의 갑옷 파편",
                          "count":  1,
-                         "image":  "/images/Items/고대_기사의_무기_파편.png"
+                         "image":  "/images/Items/고대_기사의_갑옷_파편.png"
                      },
                      {
-                         "name":  "요새 수호자의 보석 파편",
+                         "name":  "요새 문양이 새겨진 판금 조각",
                          "count":  3,
-                         "image":  "/images/Items/요새_수호자의_보석_파편.png"
+                         "image":  "/images/Items/요새_문양이_새겨진_판금_조각.png"
                      },
                      {
                          "name":  "심연의 핵",
@@ -9347,9 +9347,9 @@
                          "image":  "/images/Items/어비스_아머.png"
                      },
                      {
-                         "name":  "가짜 달여왕 군단의 무기 파편",
+                         "name":  "가짜 달여왕 군단의 갑옷 파편",
                          "count":  3,
-                         "image":  "/images/Items/가짜_달여왕_군단의_무기_파편.png"
+                         "image":  "/images/Items/가짜_달여왕_군단의_갑옷_파편.png"
                      },
                      {
                          "name":  "가공된 달의 광물(귀속)",
@@ -9424,9 +9424,9 @@
                          "image":  "/images/Items/인퍼널_메일.png"
                      },
                      {
-                         "name":  "프시키의 파편 - 파괴",
+                         "name":  "프시키의 파편 - 단절",
                          "count":  4,
-                         "image":  "/images/Items/프시키의_파편_-_파괴.png"
+                         "image":  "/images/Items/프시키의_파편_-_단절.png"
                      },
                      {
                          "name":  "시트린",
@@ -9490,14 +9490,14 @@
                          "image":  "/images/Items/아퀼루스_메일.png"
                      },
                      {
-                         "name":  "고대 기사의 무기 파편",
+                         "name":  "고대 기사의 갑옷 파편",
                          "count":  1,
-                         "image":  "/images/Items/고대_기사의_무기_파편.png"
+                         "image":  "/images/Items/고대_기사의_갑옷_파편.png"
                      },
                      {
-                         "name":  "요새 수호자의 보석 파편",
+                         "name":  "요새 문양이 새겨진 판금 조각",
                          "count":  3,
-                         "image":  "/images/Items/요새_수호자의_보석_파편.png"
+                         "image":  "/images/Items/요새_문양이_새겨진_판금_조각.png"
                      },
                      {
                          "name":  "심연의 핵",
@@ -9561,9 +9561,9 @@
                          "image":  "/images/Items/어비스_메일.png"
                      },
                      {
-                         "name":  "가짜 달여왕 군단의 무기 파편",
+                         "name":  "가짜 달여왕 군단의 갑옷 파편",
                          "count":  3,
-                         "image":  "/images/Items/가짜_달여왕_군단의_무기_파편.png"
+                         "image":  "/images/Items/가짜_달여왕_군단의_갑옷_파편.png"
                      },
                      {
                          "name":  "가공된 달의 광물(귀속)",
@@ -9640,9 +9640,9 @@
                          "image":  "/images/Items/인퍼널_리플렉트_아머.png"
                      },
                      {
-                         "name":  "프시키의 파편 - 파괴",
+                         "name":  "프시키의 파편 - 단절",
                          "count":  4,
-                         "image":  "/images/Items/프시키의_파편_-_파괴.png"
+                         "image":  "/images/Items/프시키의_파편_-_단절.png"
                      },
                      {
                          "name":  "시트린",
@@ -9708,14 +9708,14 @@
                          "image":  "/images/Items/아퀼루스_리플렉트_아머.png"
                      },
                      {
-                         "name":  "고대 기사의 무기 파편",
+                         "name":  "고대 기사의 갑옷 파편",
                          "count":  1,
-                         "image":  "/images/Items/고대_기사의_무기_파편.png"
+                         "image":  "/images/Items/고대_기사의_갑옷_파편.png"
                      },
                      {
-                         "name":  "요새 수호자의 보석 파편",
+                         "name":  "요새 문양이 새겨진 판금 조각",
                          "count":  3,
-                         "image":  "/images/Items/요새_수호자의_보석_파편.png"
+                         "image":  "/images/Items/요새_문양이_새겨진_판금_조각.png"
                      },
                      {
                          "name":  "심연의 핵",
@@ -9781,9 +9781,9 @@
                          "image":  "/images/Items/어비스_리플렉트_아머.png"
                      },
                      {
-                         "name":  "가짜 달여왕 군단의 무기 파편",
+                         "name":  "가짜 달여왕 군단의 갑옷 파편",
                          "count":  3,
-                         "image":  "/images/Items/가짜_달여왕_군단의_무기_파편.png"
+                         "image":  "/images/Items/가짜_달여왕_군단의_갑옷_파편.png"
                      },
                      {
                          "name":  "가공된 달의 광물(귀속)",
@@ -9847,9 +9847,9 @@
                          "image":  "/images/Items/인퍼널_슈츠.png"
                      },
                      {
-                         "name":  "프시키의 파편 - 파괴",
+                         "name":  "프시키의 파편 - 단절",
                          "count":  4,
-                         "image":  "/images/Items/프시키의_파편_-_파괴.png"
+                         "image":  "/images/Items/프시키의_파편_-_단절.png"
                      },
                      {
                          "name":  "시트린",
@@ -9902,14 +9902,14 @@
                          "image":  "/images/Items/아퀼루스_슈츠.png"
                      },
                      {
-                         "name":  "고대 기사의 무기 파편",
+                         "name":  "고대 기사의 갑옷 파편",
                          "count":  1,
-                         "image":  "/images/Items/고대_기사의_무기_파편.png"
+                         "image":  "/images/Items/고대_기사의_갑옷_파편.png"
                      },
                      {
-                         "name":  "요새 수호자의 보석 파편",
+                         "name":  "요새 문양이 새겨진 판금 조각",
                          "count":  3,
-                         "image":  "/images/Items/요새_수호자의_보석_파편.png"
+                         "image":  "/images/Items/요새_문양이_새겨진_판금_조각.png"
                      },
                      {
                          "name":  "심연의 핵",
@@ -9962,9 +9962,9 @@
                          "image":  "/images/Items/어비스_슈츠.png"
                      },
                      {
-                         "name":  "가짜 달여왕 군단의 무기 파편",
+                         "name":  "가짜 달여왕 군단의 갑옷 파편",
                          "count":  3,
-                         "image":  "/images/Items/가짜_달여왕_군단의_무기_파편.png"
+                         "image":  "/images/Items/가짜_달여왕_군단의_갑옷_파편.png"
                      },
                      {
                          "name":  "가공된 달의 광물(귀속)",
