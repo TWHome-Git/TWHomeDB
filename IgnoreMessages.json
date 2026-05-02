@@ -1,0 +1,16 @@
+{
+  "NormalIgnoredMessages": [
+    "금화 주머니를 획득 했습니다.",
+    "지역 보상상자를 열었습니다.",
+    "이공간 보물상자를 열었습니다.",
+    "포탈 전용 상자를 열었습니다."
+  ],
+  "NormalIgnoredContains": [],
+  "ClubIgnoredContains": [
+    "[클럽 보스]"
+  ],
+  "NormalIgnoredRegex": [
+    "^(SP|MP|Fever|HP)가\\s*\\d+%\\s*회복되었습니다\\.?$",
+    "^체력이\\s*\\d+%\\s*회복되었습니다\\.?$"
+  ]
+}
