@@ -1127,6 +1127,31 @@
                       "abbr" : "가짜 문양"
                   },
                   {
+                      "name":  "스페셜 스킬 (ⓟ 저격 연마) Lv.6",
+                      "grade":  "Rare",
+                      "abbr" : "저격 연마 LV6"
+                  },
+                  {
+                      "name":  "스페셜 스킬 (ⓟ 저격 연마) Lv.7",
+                      "grade":  "Rare",
+                      "abbr" : "저격 연마 LV7"
+                  },
+                  {
+                      "name":  "스페셜 스킬 (ⓟ 저격 연마) Lv.8",
+                      "grade":  "Rare",
+                      "abbr" : "저격 연마 LV8"
+                  },
+                  {
+                      "name":  "스페셜 스킬 (ⓟ 저격 연마) Lv.9",
+                      "grade":  "Rare",
+                      "abbr" : "저격 연마 LV9"
+                  },
+                  {
+                      "name":  "스페셜 스킬 (ⓟ 저격 연마) Lv.10",
+                      "grade":  "Rare",
+                      "abbr" : "저격 연마 LV10"
+                  },
+                  {
                       "name":  "달빛 변환 장치",
                       "grade":  "Special"
                   },
