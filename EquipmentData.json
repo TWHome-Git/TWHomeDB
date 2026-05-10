@@ -11694,7 +11694,7 @@
         "major_category":  "장비 세트",
         "sub_category":  "투구",
         "name":  "改-세크리드 헬름",
-        "image":  "/images/items/改-세크리드_헬름.png",
+        "image":  "/images/items/세크리드_헬름.png",
         "stats":  {
                       "찌르기":  {
                                   "min":  122,
@@ -11754,7 +11754,7 @@
         "major_category":  "장비 세트",
         "sub_category":  "머리",
         "name":  "改-세크리드 아뮬렛",
-        "image":  "/images/items/改-세크리드_아뮬렛.png",
+        "image":  "/images/items/세크리드_아뮬렛.png",
         "stats":  {
                       "찌르기":  {
                                   "min":  122,
@@ -11814,7 +11814,7 @@
         "major_category":  "장비 세트",
         "sub_category":  "몸",
         "name":  "改-세크리드 망토",
-        "image":  "/images/items/改-세크리드_망토.png",
+        "image":  "/images/items/세크리드_망토.png",
         "stats":  {
                       "찌르기":  {
                                   "min":  285,
@@ -11874,7 +11874,7 @@
         "major_category":  "장비 세트",
         "sub_category":  "손",
         "name":  "改-세크리드 건틀렛",
-        "image":  "/images/items/改-세크리드_건틀렛.png",
+        "image":  "/images/items/세크리드_건틀렛.png",
         "stats":  {
                       "찌르기":  {
                                   "min":  122,
@@ -11934,7 +11934,7 @@
         "major_category":  "장비 세트",
         "sub_category":  "발",
         "name":  "改-세크리드 부츠",
-        "image":  "/images/items/改-세크리드_부츠.png",
+        "image":  "/images/items/세크리드_부츠.png",
         "stats":  {
                       "찌르기":  {
                                   "min":  122,
