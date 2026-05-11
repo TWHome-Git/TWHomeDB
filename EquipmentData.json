@@ -21384,22 +21384,17 @@
         "image": "/images/Items/아퀼루스_아뮬렛.png"
       },
       {
-        "name": "고대 기사의 무기 파편",
-        "count": 1,
-        "image": "/images/Items/고대_기사의_무기_파편.png"
+        "name": "고대 기사의 팬던트 파편",
+        "count": 5,
+        "image": "/images/Items/고대_기사의_팬던트_파편.png"
       },
       {
-        "name": "요새 수호자의 보석 파편",
+        "name": "요새 문양이 새겨진 목걸이 조각",
         "count": 3,
-        "image": "/images/Items/요새_수호자의_보석_파편.png"
+        "image": "/images/Items/요새_문양이_새겨진_목걸이_조각.png"
       },
       {
-        "name": "심연의 핵",
-        "count": 1,
-        "image": "/images/Items/심연의_핵.png"
-      },
-      {
-        "name": "아크론 혈투의 증표(귀속) ( 100 개)",
+        "name": "아크론 혈투의 증표(귀속) ( 50 개)",
         "count": 1,
         "image": "/images/Items/아크론_혈투의_증표(귀속).png"
       }
