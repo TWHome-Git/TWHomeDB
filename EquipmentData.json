@@ -15526,7 +15526,7 @@
   {
     "id": 167,
     "major_category": "손목",
-    "sub_category": "마법탄창",
+    "sub_category": "물리탄창",
     "name": "세크리드 탄창",
     "image": "/images/items/세크리드_탄창.png",
     "stats": {
@@ -16350,7 +16350,7 @@
   {
     "id": 166,
     "major_category": "손목",
-    "sub_category": "마법탄창",
+    "sub_category": "물리탄창",
     "name": "改-세크리드 탄창",
     "image": "/images/items/세크리드_탄창.png",
     "stats": {
@@ -26387,8 +26387,8 @@
     "id": 335,
     "major_category": "갑옷",
     "sub_category": "마법갑옷",
-    "name": "改-세크리드 리플렉트",
-    "image": "/images/items/세크리드_리플렉트.png",
+    "name": "改-세크리드 리플렉트_아머",
+    "image": "/images/items/세크리드_리플렉트_아머.png",
     "stats": {
       "찌르기": {
         "min": 140,
