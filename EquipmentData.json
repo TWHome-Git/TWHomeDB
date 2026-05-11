@@ -8589,7 +8589,24 @@
         "limit": 130
       }
     },
-    "비고": null,
+    "비고": "계승 시, 세크리드 주화(무기) 65개, 에모티스 7개, 세크리드 룬스톤 13개",
+    "재료목록": [
+      {
+        "name": "세크리드 주화(무기)",
+        "count": 50,
+        "image": "/images/Items/세크리드_주화.png"
+      },
+      {
+        "name": "에모티스",
+        "count": 5,
+        "image": "/images/Items/에모티스.png"
+      },
+      {
+        "name": "세크리드 룬스톤",
+        "count": 10,
+        "image": "/images/Items/세크리드_룬스톤.png"
+      }
+    ],
     "characters": [
       "이솔렛"
     ],
@@ -8884,12 +8901,30 @@
         "limit": 130
       }
     },
-    "비고": null,
+     "비고": "계승 시, 세크리드 주화(무기) 65개, 에모티스 7개, 세크리드 룬스톤 13개",
+
     "characters": [
       "이솔렛"
     ],
     "attack_type": [
       "베기"
+    ]
+     "재료목록": [
+      {
+        "name": "세크리드 주화(무기)",
+        "count": 50,
+        "image": "/images/Items/세크리드_주화.png"
+      },
+      {
+        "name": "에모티스",
+        "count": 5,
+        "image": "/images/Items/에모티스.png"
+      },
+      {
+        "name": "세크리드 룬스톤",
+        "count": 10,
+        "image": "/images/Items/세크리드_룬스톤.png"
+      }
     ]
   },
   {
@@ -12809,6 +12844,28 @@
       "이솔렛"
     ],
     "attack_type": ""
+        "재료목록": [
+      {
+        "name": "인퍼널 크리스(sub)",
+        "count": 1,
+        "image": "/images/Items/인퍼널_크리스(sub).png"
+      },
+      {
+        "name": "프시키의 파편 - 파괴",
+        "count": 2,
+        "image": "/images/Items/프시키의_파편_-_파괴.png"
+      },
+      {
+        "name": "시트린",
+        "count": 5,
+        "image": "/images/Items/시트린.png"
+      },
+      {
+        "name": "태청금액신단",
+        "count": 3,
+        "image": "/images/Items/태청금액신단.png"
+      }
+    ]
   },
   {
     "id": 168,
@@ -12951,6 +13008,28 @@
       "이솔렛"
     ],
     "attack_type": ""
+        "재료목록": [
+      {
+        "name": "인퍼널 글라디우스(sub)",
+        "count": 1,
+        "image": "/images/Items/인퍼널_글라디우스(sub).png"
+      },
+      {
+        "name": "프시키의 파편 - 파괴",
+        "count": 2,
+        "image": "/images/Items/프시키의_파편_-_파괴.png"
+      },
+      {
+        "name": "시트린",
+        "count": 5,
+        "image": "/images/Items/시트린.png"
+      },
+      {
+        "name": "태청금액신단",
+        "count": 3,
+        "image": "/images/Items/태청금액신단.png"
+      }
+    ]
   },
   {
     "id": 176,
@@ -13677,6 +13756,33 @@
       "이솔렛"
     ],
     "attack_type": ""
+      "재료목록": [
+      {
+        "name": "아퀼루스 크리스(sub)",
+        "count": 1,
+        "image": "/images/Items/아퀼루스_크리스(sub).png"
+      },
+      {
+        "name": "고대 기사의 무기 파편",
+        "count": 3,
+        "image": "/images/Items/고대_기사의_무기_파편.png"
+      },
+      {
+        "name": "요새 수호자의 보석 파편",
+        "count": 2,
+        "image": "/images/Items/요새_수호자의_보석_파편.png"
+      },
+      {
+        "name": "심연의 핵",
+        "count": 1,
+        "image": "/images/Items/심연의_핵.png"
+      },
+      {
+        "name": "아크론 혈투의 증표(귀속) ( 50 개)",
+        "count": 1,
+        "image": "/images/Items/아크론_혈투의_증표(귀속).png"
+      }
+    ]
   },
   {
     "id": 169,
@@ -13820,6 +13926,34 @@
     ],
     "attack_type": ""
   },
+   "재료목록": [
+      {
+        "name": "아퀼루스 글라디우스(sub)",
+        "count": 1,
+        "image": "/images/Items/아퀼루스_글라디우스(sub).png"
+      },
+      {
+        "name": "고대 기사의 무기 파편",
+        "count": 3,
+        "image": "/images/Items/고대_기사의_무기_파편.png"
+      },
+      {
+        "name": "요새 수호자의 보석 파편",
+        "count": 2,
+        "image": "/images/Items/요새_수호자의_보석_파편.png"
+      },
+      {
+        "name": "심연의 핵",
+        "count": 1,
+        "image": "/images/Items/심연의_핵.png"
+      },
+      {
+        "name": "아크론 혈투의 증표(귀속) ( 50 개)",
+        "count": 1,
+        "image": "/images/Items/아크론_혈투의_증표(귀속).png"
+      }
+    ]
+
   {
     "id": 177,
     "major_category": "손목",
@@ -14556,6 +14690,40 @@
       "이솔렛"
     ],
     "attack_type": ""
+    "재료목록": [
+      {
+        "name": "어비스 크리스(sub)",
+        "count": 1,
+        "image": "/images/Items/어비스_크리스(sub).png"
+      },
+      {
+        "name": "가짜 달여왕 군단의 무기 파편",
+        "count": 2,
+        "image": "/images/Items/가짜_달여왕_군단의_무기_파편.png"
+      },
+      {
+        "name": "가공된 달의 광물(귀속)",
+        "count": 1,
+        "image": "/images/Items/가공된_달의_광물(귀속).png"
+      },
+      {
+        "name": "룬의 원석(귀속) ( 20 개)",
+        "count": 1,
+        "image": "/images/Items/룬의_원석(귀속).png"
+      },
+      {
+        "name": "달의 약초 ( 100 개)",
+        "count": 1,
+        "image": "/images/Items/달의_약초.png"
+      },
+      {
+        "name": "가짜 달여왕 군단의 인장(귀속)",
+        "count": 6,
+        "image": "/images/Items/가짜_달여왕_군단의_인장(귀속).png"
+      }
+    ],
+    "비고": "가공된 달의 광물(귀속) 재료\n - 10억 (NPC 판매, 흥정 20% 가능)\n룬의 원석(귀속) 20개 재료\n - 40억 (NPC 판매, 흥정 20% 가능)\n - 조합비 20억"
+
   },
   {
     "id": 170,
@@ -14709,6 +14877,41 @@
       "이솔렛"
     ],
     "attack_type": ""
+    
+    "재료목록": [
+      {
+        "name": "어비스 글라디우스(sub)",
+        "count": 1,
+        "image": "/images/Items/어비스_글라디우스(sub).png"
+      },
+      {
+        "name": "가짜 달여왕 군단의 무기 파편",
+        "count": 2,
+        "image": "/images/Items/가짜_달여왕_군단의_무기_파편.png"
+      },
+      {
+        "name": "가공된 달의 광물(귀속)",
+        "count": 1,
+        "image": "/images/Items/가공된_달의_광물(귀속).png"
+      },
+      {
+        "name": "룬의 원석(귀속) ( 20 개)",
+        "count": 1,
+        "image": "/images/Items/룬의_원석(귀속).png"
+      },
+      {
+        "name": "달의 약초 ( 100 개)",
+        "count": 1,
+        "image": "/images/Items/달의_약초.png"
+      },
+      {
+        "name": "가짜 달여왕 군단의 인장(귀속)",
+        "count": 6,
+        "image": "/images/Items/가짜_달여왕_군단의_인장(귀속).png"
+      }
+    ],
+    "비고": "가공된 달의 광물(귀속) 재료\n - 10억 (NPC 판매, 흥정 20% 가능)\n룬의 원석(귀속) 20개 재료\n - 40억 (NPC 판매, 흥정 20% 가능)\n - 조합비 20억"
+
   },
   {
     "id": 178,
@@ -26387,7 +26590,7 @@
     "id": 335,
     "major_category": "갑옷",
     "sub_category": "마법갑옷",
-    "name": "改-세크리드 리플렉트_아머",
+    "name": "改-세크리드 리플렉트 아머",
     "image": "/images/items/세크리드_리플렉트_아머.png",
     "stats": {
       "찌르기": {
