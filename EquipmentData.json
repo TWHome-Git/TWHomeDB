@@ -7313,9 +7313,9 @@
     "image": "/images/items/어비스_크리스(sub).png",
     "stats": {
       "찌르기": {
-        "min": 110,
-        "max": 140,
-        "limit": 400
+        "min": 0,
+        "max": 0,
+        "limit": 0
       },
       "베기": {
         "min": 0,
@@ -11779,9 +11779,9 @@
     "image": "/images/items/이클립스_크리스(sub).png",
     "stats": {
       "찌르기": {
-        "min": 130,
-        "max": 160,
-        "limit": 600
+        "min": 0,
+        "max": 0,
+        "limit": 0
       },
       "베기": {
         "min": 0,
