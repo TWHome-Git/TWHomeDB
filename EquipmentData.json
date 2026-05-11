@@ -18372,8 +18372,8 @@
     "id": 231,
     "major_category": "갑옷",
     "sub_category": "마법갑옷",
-    "name": "改-세크리드 리플렉트",
-    "image": "/images/items/세크리드_리플렉트.png",
+    "name": "改-세크리드 리플렉트_아머",
+    "image": "/images/items/세크리드_리플렉트_아머.png",
     "stats": {
       "찌르기": {
         "min": 140,
@@ -21449,7 +21449,7 @@
     "major_category": "무기",
     "sub_category": "세검",
     "name": "改-세크리드 레이피어",
-    "image": "/images/items/改-세크리드_레이피어.png",
+    "image": "/images/items/세크리드_레이피어.png",
     "stats": {
       "찌르기": {
         "min": 560,
@@ -21928,7 +21928,7 @@
     "major_category": "무기",
     "sub_category": "장검",
     "name": "改-세크리드 소드",
-    "image": "/images/items/改-세크리드_소드.png",
+    "image": "/images/items/세크리드_소드.png",
     "stats": {
       "찌르기": {
         "min": 490,
@@ -22405,7 +22405,7 @@
     "major_category": "무기",
     "sub_category": "평도",
     "name": "改-세크리드 시미터",
-    "image": "/images/items/改-세크리드_시미터.png",
+    "image": "/images/items/세크리드_시미터.png",
     "stats": {
       "찌르기": {
         "min": 250,
