@@ -9635,7 +9635,7 @@
   {
     "id": 98,
     "major_category": "무기",
-    "sub_category": "장검",
+    "sub_category": "아밍소드",
     "name": "세크리드 아밍소드",
     "image": "/images/items/세크리드_아밍소드.png",
     "stats": {
@@ -9687,11 +9687,10 @@
     },
     "비고": "계승 시, 세크리드 주화(무기) 65개, 에모티스 7개, 세크리드 룬스톤 13개",
     "characters": [
-      "루시안",
-      "이스핀"
+      "리체"
     ],
     "attack_type": [
-      "물리복합"
+      "베기"
     ],
     "재료목록": [
       {
@@ -9714,7 +9713,7 @@
   {
     "id": 99,
     "major_category": "무기",
-    "sub_category": "장검",
+    "sub_category": "태도",
     "name": "세크리드 페이크소드",
     "image": "/images/items/세크리드_페이크소드.png",
     "stats": {
@@ -9766,8 +9765,8 @@
     },
     "비고": "계승 시, 세크리드 주화(무기) 65개, 에모티스 7개, 세크리드 룬스톤 13개",
     "characters": [
-      "루시안",
-      "이스핀"
+      "막시민",
+      "보리스"
     ],
     "attack_type": [
       "물리복합"
@@ -11873,7 +11872,7 @@
   {
     "id": 94,
     "major_category": "무기",
-    "sub_category": "장검",
+    "sub_category": "아밍소드",
     "name": "改-세크리드 아밍소드",
     "image": "/images/items/세크리드_아밍소드.png",
     "stats": {
@@ -11942,7 +11941,7 @@
   {
     "id": 95,
     "major_category": "무기",
-    "sub_category": "장검",
+    "sub_category": "태도",
     "name": "改-세크리드 페이크소드",
     "image": "/images/items/세크리드_페이크소드.png",
     "stats": {
@@ -11994,8 +11993,8 @@
     },
     "비고": "갤럭시 스톤으로 업그레이드 ( 확률 )",
     "characters": [
-      "루시안",
-      "이스핀"
+      "막시민",
+      "보리스"
     ],
     "attack_type": [
       "물리복합"
@@ -16382,7 +16381,7 @@
       }
     },
     "비고": "계승 시, 세크리드 주화(손목) 65개, 에모티스 7개, 세크리드 룬스톤 13개",
-    "characters": [],
+    "characters": ["란지에"],
     "attack_type": [],
     "재료목록": [
       {
@@ -17126,7 +17125,9 @@
       }
     },
     "비고": "갤럭시 스톤으로 업그레이드 ( 확률 )",
-    "characters": [],
+    "characters": [
+      "란지에"
+    ],
     "attack_type": [],
     "재료목록": [
       {
