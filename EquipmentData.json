@@ -8695,7 +8695,7 @@
   {
     "id": 34,
     "major_category": "무기",
-    "sub_category": "마법총",
+    "sub_category": "물리총",
     "name": "세크리드 피스톨",
     "image": "/images/items/세크리드_피스톨.png",
     "stats": {
@@ -8750,7 +8750,7 @@
       "란지에"
     ],
     "attack_type": [
-      "마법공격"
+      "찌르기"
     ],
     "재료목록": [
       {
@@ -11052,7 +11052,7 @@
   {
     "id": 32,
     "major_category": "무기",
-    "sub_category": "마법총",
+    "sub_category": "물리총",
     "name": "改-세크리드 피스톨",
     "image": "/images/items/세크리드_피스톨.png",
     "stats": {
@@ -11107,7 +11107,7 @@
       "란지에"
     ],
     "attack_type": [
-      "마법공격"
+      "찌르기"
     ],
     "재료목록": [
       {
@@ -11394,7 +11394,7 @@
     "major_category": "무기",
     "sub_category": "세검",
     "name": "改-세크리드 레이피어",
-    "image": "/images/items/改-세크리드_레이피어.png",
+    "image": "/images/items/세크리드_레이피어.png",
     "stats": {
       "찌르기": {
         "min": 560,
