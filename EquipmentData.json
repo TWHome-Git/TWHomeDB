@@ -19235,6 +19235,70 @@
       }
     ]
   },
+    {
+    "id": 335,
+    "major_category": "갑옷",
+    "sub_category": "마법갑옷",
+    "name": "改-세크리드 리플렉트 아머",
+    "image": "/images/items/세크리드_리플렉트_아머.png",
+    "stats": {
+      "찌르기": {
+        "min": 140,
+        "max": 160,
+        "limit": 200
+      },
+      "베기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "물리방어": {
+        "min": 435,
+        "max": 485,
+        "limit": 710
+      },
+      "마법공격": {
+        "min": 145,
+        "max": 165,
+        "limit": 205
+      },
+      "마법방어": {
+        "min": 355,
+        "max": 405,
+        "limit": 630
+      },
+      "명중": {
+        "min": 95,
+        "max": 115,
+        "limit": 130
+      },
+      "크리티컬": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "회피": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "민첩": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "비고": "갤럭시 스톤으로 업그레이드 ( 확률 )",
+    "characters": [],
+    "attack_type": [],
+    "재료목록": [
+      {
+        "name": "갤럭시 스톤",
+        "count": 1,
+        "image": "/images/Items/갤럭시_스톤.png"
+      }
+    ]
+  },
   {
     "id": 210,
     "major_category": "갑옷",
@@ -24061,70 +24125,6 @@
     "조건": "",
     "characters": [],
     "attack_type": ""
-  },
-  {
-    "id": 335,
-    "major_category": "갑옷",
-    "sub_category": "마법갑옷",
-    "name": "改-세크리드 리플렉트 아머",
-    "image": "/images/items/세크리드_리플렉트_아머.png",
-    "stats": {
-      "찌르기": {
-        "min": 140,
-        "max": 160,
-        "limit": 200
-      },
-      "베기": {
-        "min": 0,
-        "max": 0,
-        "limit": 0
-      },
-      "물리방어": {
-        "min": 435,
-        "max": 485,
-        "limit": 710
-      },
-      "마법공격": {
-        "min": 145,
-        "max": 165,
-        "limit": 205
-      },
-      "마법방어": {
-        "min": 355,
-        "max": 405,
-        "limit": 630
-      },
-      "명중": {
-        "min": 95,
-        "max": 115,
-        "limit": 130
-      },
-      "크리티컬": {
-        "min": 0,
-        "max": 0,
-        "limit": 0
-      },
-      "회피": {
-        "min": 0,
-        "max": 0,
-        "limit": 0
-      },
-      "민첩": {
-        "min": 0,
-        "max": 0,
-        "limit": 0
-      }
-    },
-    "비고": "갤럭시 스톤으로 업그레이드 ( 확률 )",
-    "characters": [],
-    "attack_type": [],
-    "재료목록": [
-      {
-        "name": "갤럭시 스톤",
-        "count": 1,
-        "image": "/images/Items/갤럭시_스톤.png"
-      }
-    ]
   },
   {
     "id": 303,
