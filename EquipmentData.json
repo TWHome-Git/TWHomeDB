@@ -26239,14 +26239,14 @@
     "image": "/images/items/이클립스의_물리력.png",
     "stats": {
       "찌르기": {
-        "min": 120,
-        "max": 140,
-        "limit": 170
+        "min": 130,
+        "max": 150,
+        "limit": 180
       },
       "베기": {
-        "min": 120,
-        "max": 140,
-        "limit": 170
+        "min": 130,
+        "max": 150,
+        "limit": 180
       },
       "물리방어": {
         "min": 20,
@@ -26648,6 +26648,846 @@
         "name": "달빛 변환 장치",
         "count": 2,
         "image": "/images/Items/달빛_변환_장치.png"
+      }
+    ]
+  }
+  {
+    "id": 333,
+    "major_category": "아티팩트",
+    "sub_category": "마법 베기",
+    "name": "에테리얼 튜브(마참력)",
+    "image": "/images/items/에테리얼_튜브(마참력).png",
+    "stats": {
+      "베기": {
+        "min": 190,
+        "max": 210,
+        "limit": 240
+      },
+      "물리방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법공격": {
+        "min": 190,
+        "max": 210,
+        "limit": 240
+      },
+      "마법방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60 
+      },
+      "명중": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "회피": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "민첩": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "크리티컬": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "마법베기",
+    "재료목록": [
+      {
+        "name": "연금술사의 에테르 주사기",
+        "count": 2,
+        "image": "/images/Items/연금술사의_에테르_주사기.png"
+      },
+      {
+        "name": "연금술사의 시험관",
+        "count": 2,
+        "image": "/images/Items/연금술사의_시험관.png"
+      }
+    ]
+  },
+{
+    "id": 334,
+    "major_category": "아티팩트",
+    "sub_category": "마법 베기",
+    "name": "에테리얼 튜브(마참력) - 디펜시오",
+    "image": "/images/items/에테리얼_튜브(마참력)_-_디펜시오.png",
+    "stats": {
+      "베기": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "물리방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "마법공격": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "마법방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "명중": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "회피": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "민첩": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "크리티컬": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "마법베기",
+    "재료목록": [
+      {
+        "name": "에테리얼 튜브(마참력)",
+        "count": 1,
+        "image": "/images/Items/에테리얼_튜브(마참력).png"
+      },
+      {
+        "name": "에테르 오브",
+        "count": 1,
+        "image": "/images/Items/에테르_오브.png"
+      }
+    ]
+  },
+  {
+    "id": 335,
+    "major_category": "아티팩트",
+    "sub_category": "마법공격",
+    "name": "에테리얼 튜브(마력)",
+    "image": "/images/items/에테리얼_튜브(마력).png",
+    "stats": {
+      "물리방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법공격": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "마법방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "명중": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "회피": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "민첩": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "크리티컬": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "베기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "마법공격",
+    "재료목록": [
+       {
+        "name": "연금술사의 에테르 주사기",
+        "count": 2,
+        "image": "/images/Items/연금술사의_에테르_주사기.png"
+      },
+      {
+        "name": "연금술사의 시험관",
+        "count": 2,
+        "image": "/images/Items/연금술사의_시험관.png"
+      }
+    ]
+  },
+  {
+    "id": 336,
+    "major_category": "아티팩트",
+    "sub_category": "마법공격",
+    "name": "에테리얼 튜브(마력) - 디펜시오",
+    "image": "/images/items/에테리얼_튜브(마력)_-_디펜시오.png",
+    "stats": {
+      "물리방어": {
+        "min": 45,
+        "max": 55,
+        "limit": 65
+      },
+      "마법공격": {
+        "min": 230,
+        "max": 250,
+        "limit": 280
+      },
+      "마법방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "명중": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "회피": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "민첩": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "크리티컬": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "베기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "마법공격",
+    "재료목록": [
+      {
+        "name": "에테리얼 튜브(마력)",
+        "count": 1,
+        "image": "/images/Items/에테리얼_튜브(마력).png"
+      },
+      {
+        "name": "에테르 오브",
+        "count": 1,
+        "image": "/images/Items/에테르_오브.png"
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "major_category": "아티팩트",
+    "sub_category": "마법방어(신성)",
+    "name": "에테리얼 튜브(신성)",
+    "image": "/images/items/에테리얼_튜브(신성).png",
+    "stats": {
+      "물리방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법공격": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법방어": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "명중": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "회피": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "민첩": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "크리티컬": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "베기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "마법방어",
+    "재료목록": [
+       {
+        "name": "연금술사의 에테르 주사기",
+        "count": 2,
+        "image": "/images/Items/연금술사의_에테르_주사기.png"
+      },
+      {
+        "name": "연금술사의 시험관",
+        "count": 2,
+        "image": "/images/Items/연금술사의_시험관.png"
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "major_category": "아티팩트",
+    "sub_category": "마법방어(신성)",
+    "name": "에테리얼 튜브(신성) - 디펜시오",
+    "image": "/images/items/에테리얼_튜브(신성)_-_디펜시오.png",
+    "stats": {
+      "물리방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "마법공격": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "마법방어": {
+        "min": 230,
+        "max": 250,
+        "limit": 280
+      },
+      "명중": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "회피": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "민첩": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "크리티컬": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "베기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "마법방어",
+    "재료목록": [
+      {
+        "name": "에테리얼 튜브(신성)",
+        "count": 1,
+        "image": "/images/Items/에테리얼_튜브(신성).png"
+      },
+      {
+        "name": "에테르 오브",
+        "count": 1,
+        "image": "/images/Items/에테르_오브.png"
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "major_category": "아티팩트",
+    "sub_category": "물리 복합",
+    "name": "에테리얼 튜브(물리력)",
+    "image": "/images/items/에테리얼_튜브(물리력).png",
+    "stats": {
+      "찌르기": {
+        "min": 190,
+        "max": 210,
+        "limit": 240
+      },
+      "베기": {
+        "min": 190,
+        "max": 210,
+        "limit": 240
+      },
+      "물리방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "명중": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "회피": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "민첩": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "크리티컬": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법공격": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "물리복합",
+    "재료목록": [
+       {
+        "name": "연금술사의 에테르 주사기",
+        "count": 2,
+        "image": "/images/Items/연금술사의_에테르_주사기.png"
+      },
+      {
+        "name": "연금술사의 시험관",
+        "count": 2,
+        "image": "/images/Items/연금술사의_시험관.png"
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "major_category": "아티팩트",
+    "sub_category": "물리 복합",
+    "name": "에테리얼 튜브(물리력) - 디펜시오",
+    "image": "/images/items/에테리얼_튜브(물리력)_-_디펜시오.png",
+    "stats": {
+      "찌르기": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "베기": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "물리방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "마법방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "명중": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "회피": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "민첩": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "크리티컬": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "마법공격": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "물리복합",
+    "재료목록": [
+      {
+        "name": "에테리얼 튜브(물리력)",
+        "count": 1,
+        "image": "/images/Items/에테리얼_튜브(물리력).png"
+      },
+      {
+        "name": "에테르 오브",
+        "count": 1,
+        "image": "/images/Items/에테르_오브.png"
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "major_category": "아티팩트",
+    "sub_category": "베기",
+    "name": "에테리얼 튜브(참력)",
+    "image": "/images/items/에테리얼_튜브(참력).png",
+    "stats": {
+      "베기": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "물리방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "명중": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "회피": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "민첩": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "크리티컬": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "마법공격": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "베기",
+    "재료목록": [
+      {
+        "name": "연금술사의 에테르 주사기",
+        "count": 2,
+        "image": "/images/Items/연금술사의_에테르_주사기.png"
+      },
+      {
+        "name": "연금술사의 시험관",
+        "count": 2,
+        "image": "/images/Items/연금술사의_시험관.png"
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "major_category": "아티팩트",
+    "sub_category": "베기",
+    "name": "에테리얼_튜브(참력) - 디펜시오",
+    "image": "/images/items/에테리얼_튜브(참력)_-_디펜시오.png",
+    "stats": {
+      "베기": {
+        "min": 230,
+        "max": 250,
+        "limit": 280
+      },
+      "물리방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "마법방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "명중": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "회피": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "민첩": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "크리티컬": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "찌르기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "마법공격": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "베기",
+    "재료목록": [
+      {
+        "name": "에테리얼 튜브(참력)",
+        "count": 1,
+        "image": "/images/Items/에테리얼_튜브(참력).png"
+      },
+       {
+        "name": "에테르 오브",
+        "count": 1,
+        "image": "/images/Items/에테르_오브.png"
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "major_category": "아티팩트",
+    "sub_category": "찌르기",
+    "name": "에테리얼 튜브(자력)",
+    "image": "/images/items/에테리얼_튜브(자력).png",
+    "stats": {
+      "찌르기": {
+        "min": 210,
+        "max": 230,
+        "limit": 260
+      },
+      "물리방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "마법방어": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "명중": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "회피": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "민첩": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "크리티컬": {
+        "min": 30,
+        "max": 40,
+        "limit": 60
+      },
+      "베기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "마법공격": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "찌르기",
+    "재료목록": [
+       {
+        "name": "연금술사의 에테르 주사기",
+        "count": 2,
+        "image": "/images/Items/연금술사의_에테르_주사기.png"
+      },
+      {
+        "name": "연금술사의 시험관",
+        "count": 2,
+        "image": "/images/Items/연금술사의_시험관.png"
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "major_category": "아티팩트",
+    "sub_category": "찌르기",
+    "name": "에테리얼 튜브(자력) - 디펜시오",
+    "image": "/images/items/에테리얼_튜브(자력)_-_디펜시오.png",
+    "stats": {
+      "찌르기": {
+        "min": 230,
+        "max": 250,
+        "limit": 280
+      },
+      "물리방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "마법방어": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "명중": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "회피": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "민첩": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "크리티컬": {
+        "min": 35,
+        "max": 45,
+        "limit": 65
+      },
+      "베기": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      },
+      "마법공격": {
+        "min": 0,
+        "max": 0,
+        "limit": 0
+      }
+    },
+    "합성": "",
+    "조건": "",
+    "characters": [],
+    "attack_type": "찌르기",
+    "재료목록": [
+      {
+        "name": "에테리얼_튜브(자력)",
+        "count": 1,
+        "image": "/images/Items/에테리얼_튜브(자력).png"
+      },
+       {
+        "name": "에테르 오브",
+        "count": 1,
+        "image": "/images/Items/에테르_오브.png"
       }
     ]
   }
