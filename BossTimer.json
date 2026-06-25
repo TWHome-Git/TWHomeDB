@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "bosses": [
     {
       "id": "Arkan",
@@ -42,11 +42,11 @@
       }
     },
     {
-  "id": "event",
-  "name": "이벤트",
-  "category": "event",
-  "enabledByDefault": false,
-  "schedule": {
+    "id": "event",
+    "name": "이벤트",
+    "category": "event",
+    "enabledByDefault": false,
+    "schedule": {
     "type": "hourly",
     "minute": 10
   }
