@@ -2,6 +2,1007 @@
   "CollectDate": "2026-08-11",
   "Rankings": [
     {
+      "CharacterCode": 0,
+      "Rank": 1,
+      "UserId": "카즈하",
+      "Level": 90,
+      "Essence": 1500
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 2,
+      "UserId": "콘크리트",
+      "Level": 89,
+      "Essence": 691
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 3,
+      "UserId": "돌르마무",
+      "Level": 60,
+      "Essence": 2124
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 4,
+      "UserId": "칼",
+      "Level": 60,
+      "Essence": 622
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 5,
+      "UserId": "시골방망이",
+      "Level": 60,
+      "Essence": 562
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 6,
+      "UserId": "무딱",
+      "Level": 60,
+      "Essence": 555
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 7,
+      "UserId": "뉴비연어",
+      "Level": 60,
+      "Essence": 439
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 8,
+      "UserId": "목도",
+      "Level": 60,
+      "Essence": 292
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 9,
+      "UserId": "Godsoo",
+      "Level": 60,
+      "Essence": 60
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 10,
+      "UserId": "센치하게、",
+      "Level": 60,
+      "Essence": 23
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 11,
+      "UserId": "제우스상속자",
+      "Level": 57,
+      "Essence": 147
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 12,
+      "UserId": "기능이",
+      "Level": 55,
+      "Essence": 53
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 13,
+      "UserId": "개바람",
+      "Level": 53,
+      "Essence": 2280
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 14,
+      "UserId": "봄을줍는강가",
+      "Level": 52,
+      "Essence": 1197
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 15,
+      "UserId": "Delic",
+      "Level": 51,
+      "Essence": 323
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 16,
+      "UserId": "루샨응삼이",
+      "Level": 51,
+      "Essence": 105
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 17,
+      "UserId": "하츠",
+      "Level": 48,
+      "Essence": 836
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 18,
+      "UserId": "광물학자",
+      "Level": 48,
+      "Essence": 116
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 19,
+      "UserId": "《ㄴr무●》",
+      "Level": 47,
+      "Essence": 44
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 20,
+      "UserId": "골텍스",
+      "Level": 45,
+      "Essence": 43
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 21,
+      "UserId": "갈치짜그리",
+      "Level": 42,
+      "Essence": 17
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 22,
+      "UserId": "김띠또",
+      "Level": 40,
+      "Essence": 2413
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 23,
+      "UserId": "우성우",
+      "Level": 40,
+      "Essence": 2230
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 24,
+      "UserId": "첼",
+      "Level": 40,
+      "Essence": 2100
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 25,
+      "UserId": "푸른바다",
+      "Level": 40,
+      "Essence": 1917
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 26,
+      "UserId": "출근하나",
+      "Level": 40,
+      "Essence": 1720
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 27,
+      "UserId": "니친구잡곡밥",
+      "Level": 40,
+      "Essence": 1180
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 28,
+      "UserId": "오코츠유타",
+      "Level": 40,
+      "Essence": 1107
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 29,
+      "UserId": "팔라딘",
+      "Level": 40,
+      "Essence": 771
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 30,
+      "UserId": "곤장",
+      "Level": 40,
+      "Essence": 596
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 31,
+      "UserId": "김가을",
+      "Level": 40,
+      "Essence": 337
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 32,
+      "UserId": "늘푸",
+      "Level": 40,
+      "Essence": 320
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 33,
+      "UserId": "아박사",
+      "Level": 40,
+      "Essence": 284
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 34,
+      "UserId": "BUFC",
+      "Level": 40,
+      "Essence": 260
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 35,
+      "UserId": "꿀구단",
+      "Level": 40,
+      "Essence": 200
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 36,
+      "UserId": "말랑찹쌀떡",
+      "Level": 40,
+      "Essence": 160
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 37,
+      "UserId": "빙수니",
+      "Level": 40,
+      "Essence": 75
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 38,
+      "UserId": "모기형",
+      "Level": 40,
+      "Essence": 46
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 39,
+      "UserId": "벼리슬",
+      "Level": 40,
+      "Essence": 13
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 40,
+      "UserId": "LITA",
+      "Level": 37,
+      "Essence": 116
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 41,
+      "UserId": "울라숑",
+      "Level": 36,
+      "Essence": 68
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 42,
+      "UserId": "￠메뉴",
+      "Level": 35,
+      "Essence": 813
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 43,
+      "UserId": "윤은눠",
+      "Level": 29,
+      "Essence": 21
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 44,
+      "UserId": "재활용s",
+      "Level": 25,
+      "Essence": 111
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 45,
+      "UserId": "테하루칼",
+      "Level": 20,
+      "Essence": 4951
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 46,
+      "UserId": "시골탈출",
+      "Level": 20,
+      "Essence": 4470
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 47,
+      "UserId": "하마",
+      "Level": 20,
+      "Essence": 4405
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 48,
+      "UserId": "신기하냥",
+      "Level": 20,
+      "Essence": 3859
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 49,
+      "UserId": "애잔",
+      "Level": 20,
+      "Essence": 3193
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 50,
+      "UserId": "옹심’",
+      "Level": 20,
+      "Essence": 2641
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 51,
+      "UserId": "샤코",
+      "Level": 20,
+      "Essence": 2615
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 52,
+      "UserId": "루얀",
+      "Level": 20,
+      "Essence": 2287
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 53,
+      "UserId": "시사일본어",
+      "Level": 20,
+      "Essence": 2271
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 54,
+      "UserId": "감귤쓰。",
+      "Level": 20,
+      "Essence": 2262
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 55,
+      "UserId": "지기미",
+      "Level": 20,
+      "Essence": 2182
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 56,
+      "UserId": "나가노",
+      "Level": 20,
+      "Essence": 2177
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 57,
+      "UserId": "덕두",
+      "Level": 20,
+      "Essence": 2031
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 58,
+      "UserId": "krkr",
+      "Level": 20,
+      "Essence": 1952
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 59,
+      "UserId": "라꾸여니",
+      "Level": 20,
+      "Essence": 1776
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 60,
+      "UserId": "차사",
+      "Level": 20,
+      "Essence": 1714
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 61,
+      "UserId": "소유성",
+      "Level": 20,
+      "Essence": 1616
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 62,
+      "UserId": "재주꾼",
+      "Level": 20,
+      "Essence": 1605
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 63,
+      "UserId": "IRIS카프리스",
+      "Level": 20,
+      "Essence": 1557
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 64,
+      "UserId": "편의점캔맥주",
+      "Level": 20,
+      "Essence": 1497
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 65,
+      "UserId": "복카이센",
+      "Level": 20,
+      "Essence": 1482
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 66,
+      "UserId": "김샨",
+      "Level": 20,
+      "Essence": 1318
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 67,
+      "UserId": "츠찍",
+      "Level": 20,
+      "Essence": 1213
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 68,
+      "UserId": "깜콩",
+      "Level": 20,
+      "Essence": 1101
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 69,
+      "UserId": "RoyalSalute。",
+      "Level": 20,
+      "Essence": 1095
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 70,
+      "UserId": "찍먹중입니다",
+      "Level": 20,
+      "Essence": 1068
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 71,
+      "UserId": "모르루시",
+      "Level": 20,
+      "Essence": 1047
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 72,
+      "UserId": "강프로",
+      "Level": 20,
+      "Essence": 982
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 73,
+      "UserId": "밥통전사",
+      "Level": 20,
+      "Essence": 962
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 74,
+      "UserId": "Rlodi",
+      "Level": 20,
+      "Essence": 893
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 75,
+      "UserId": "뉴비안느",
+      "Level": 20,
+      "Essence": 792
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 76,
+      "UserId": "나마",
+      "Level": 20,
+      "Essence": 379
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 77,
+      "UserId": "강숭숭",
+      "Level": 20,
+      "Essence": 373
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 78,
+      "UserId": "블디레인",
+      "Level": 20,
+      "Essence": 362
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 79,
+      "UserId": "˛風¸",
+      "Level": 20,
+      "Essence": 314
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 80,
+      "UserId": "브링",
+      "Level": 20,
+      "Essence": 289
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 81,
+      "UserId": "욘듀",
+      "Level": 20,
+      "Essence": 233
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 82,
+      "UserId": "루황。",
+      "Level": 20,
+      "Essence": 171
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 83,
+      "UserId": "후루카넬리",
+      "Level": 20,
+      "Essence": 151
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 84,
+      "UserId": "케프리",
+      "Level": 20,
+      "Essence": 123
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 85,
+      "UserId": "GTX5090",
+      "Level": 20,
+      "Essence": 70
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 86,
+      "UserId": "pysgs",
+      "Level": 20,
+      "Essence": 57
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 87,
+      "UserId": "Demonic＃",
+      "Level": 20,
+      "Essence": 16
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 88,
+      "UserId": "Forbidability",
+      "Level": 18,
+      "Essence": 84
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 89,
+      "UserId": "강림하셧다",
+      "Level": 17,
+      "Essence": 286
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 90,
+      "UserId": "오황루시",
+      "Level": 17,
+      "Essence": 53
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 91,
+      "UserId": "허니JOB",
+      "Level": 16,
+      "Essence": 89
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 92,
+      "UserId": "wHaSoo",
+      "Level": 16,
+      "Essence": 59
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 93,
+      "UserId": "다이",
+      "Level": 16,
+      "Essence": 57
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 94,
+      "UserId": "피나클리턴2026",
+      "Level": 16,
+      "Essence": 31
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 95,
+      "UserId": "헬딘",
+      "Level": 15,
+      "Essence": 83
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 96,
+      "UserId": "아오모리",
+      "Level": 15,
+      "Essence": 66
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 97,
+      "UserId": "말만해없애줄꼐",
+      "Level": 15,
+      "Essence": 64
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 98,
+      "UserId": "호두보송이",
+      "Level": 14,
+      "Essence": 85
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 99,
+      "UserId": "돌코롬",
+      "Level": 14,
+      "Essence": 48
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 100,
+      "UserId": "뀨우￡",
+      "Level": 14,
+      "Essence": 11
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 101,
+      "UserId": "고수지2",
+      "Level": 13,
+      "Essence": 3
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 102,
+      "UserId": "고급병사",
+      "Level": 13,
+      "Essence": 2
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 103,
+      "UserId": "태권브이v",
+      "Level": 12,
+      "Essence": 50
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 104,
+      "UserId": "박규영",
+      "Level": 11,
+      "Essence": 57
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 105,
+      "UserId": "한북북",
+      "Level": 11,
+      "Essence": 11
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 106,
+      "UserId": "Plo",
+      "Level": 10,
+      "Essence": 95
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 107,
+      "UserId": "Simya",
+      "Level": 10,
+      "Essence": 45
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 108,
+      "UserId": "류이치사카모토",
+      "Level": 10,
+      "Essence": 30
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 109,
+      "UserId": "찌리리찌릿",
+      "Level": 10,
+      "Essence": 18
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 110,
+      "UserId": "묠리",
+      "Level": 9,
+      "Essence": 71
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 111,
+      "UserId": "슈퍼그낭조",
+      "Level": 9,
+      "Essence": 17
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 112,
+      "UserId": "ⓗ츄늬",
+      "Level": 8,
+      "Essence": 96
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 113,
+      "UserId": "하기스매직팬티",
+      "Level": 8,
+      "Essence": 88
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 114,
+      "UserId": "근위병",
+      "Level": 8,
+      "Essence": 28
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 115,
+      "UserId": "으아아",
+      "Level": 8,
+      "Essence": 6
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 116,
+      "UserId": "큐씨안",
+      "Level": 7,
+      "Essence": 48
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 117,
+      "UserId": "공사관",
+      "Level": 7,
+      "Essence": 26
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 118,
+      "UserId": "세검짱짱",
+      "Level": 6,
+      "Essence": 93
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 119,
+      "UserId": "봇물논쟁",
+      "Level": 6,
+      "Essence": 37
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 120,
+      "UserId": "야",
+      "Level": 6,
+      "Essence": 28
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 121,
+      "UserId": "루시시시시안",
+      "Level": 5,
+      "Essence": 102
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 122,
+      "UserId": "옥동",
+      "Level": 5,
+      "Essence": 72
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 123,
+      "UserId": "얏비",
+      "Level": 5,
+      "Essence": 62
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 124,
+      "UserId": "삼버",
+      "Level": 5,
+      "Essence": 40
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 125,
+      "UserId": "루샨야샨",
+      "Level": 5,
+      "Essence": 12
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 126,
+      "UserId": "항타",
+      "Level": 4,
+      "Essence": 56
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 127,
+      "UserId": "GOR-D",
+      "Level": 4,
+      "Essence": 51
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 128,
+      "UserId": "277",
+      "Level": 4,
+      "Essence": 37
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 129,
+      "UserId": "아끼모토",
+      "Level": 4,
+      "Essence": 13
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 130,
+      "UserId": "베베",
+      "Level": 3,
+      "Essence": 81
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 131,
+      "UserId": "간다미",
+      "Level": 3,
+      "Essence": 78
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 132,
+      "UserId": "웜벧",
+      "Level": 3,
+      "Essence": 71
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 133,
+      "UserId": "Syung",
+      "Level": 3,
+      "Essence": 63
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 134,
+      "UserId": "빙글e",
+      "Level": 3,
+      "Essence": 37
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 135,
+      "UserId": "어린날의첫사랑",
+      "Level": 3,
+      "Essence": 2
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 136,
+      "UserId": "긔고",
+      "Level": 2,
+      "Essence": 11
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 137,
+      "UserId": "쏭츠",
+      "Level": 1,
+      "Essence": 103
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 138,
+      "UserId": "SenDou",
+      "Level": 1,
+      "Essence": 60
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 139,
+      "UserId": "펜빌",
+      "Level": 1,
+      "Essence": 54
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 140,
+      "UserId": "푸웨",
+      "Level": 1,
+      "Essence": 29
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 141,
+      "UserId": "봄이콩콩",
+      "Level": 1,
+      "Essence": 17
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 142,
+      "UserId": "레오나미",
+      "Level": 1,
+      "Essence": 0
+    },
+    {
+      "CharacterCode": 0,
+      "Rank": 143,
+      "UserId": "백사우",
+      "Level": 1,
+      "Essence": 0
+    },
+    {
       "CharacterCode": 1,
       "Rank": 1,
       "UserId": "백원만",
