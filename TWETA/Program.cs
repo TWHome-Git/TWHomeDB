@@ -39,31 +39,49 @@ class Program
         var page = await context.NewPageAsync();
 
         var db = new EtaRankingDb { CollectDate = DateTime.Now.ToString("yyyy-MM-dd") };
+        var emptyCodes = new List<int>();
 
-        // 수집 로직 (기존과 동일)
+        // 수집 로직
         for (int cc = 0; cc <= 18; cc++)
         {
             Console.WriteLine($"캐릭터 코드 {cc} 수집 시작...");
+            int collectedForCode = 0;
+
             for (int p = 1; p <= 50; p++)
             {
                 string url = $"https://tales.nexon.com/Community/Ranking/EtaRank?sc=7&cc={cc}&pagesize=100&page={p}";
-                try
+
+                // 일시적인 로딩 실패로 캐릭터 전체를 버리지 않도록 재시도한다.
+                bool loaded = false;
+                for (int attempt = 1; attempt <= 3 && !loaded; attempt++)
                 {
-                    await page.GotoAsync(url, new PageGotoOptions { WaitUntil = WaitUntilState.NetworkIdle });
-                    await page.WaitForSelectorAsync("table tbody tr", new PageWaitForSelectorOptions { Timeout = 10000 });
+                    try
+                    {
+                        // NetworkIdle은 이 사이트에서 도달하지 않는다(트래킹 비콘이 계속 돈다).
+                        // DOMContentLoaded로 받고, 실제 준비 여부는 셀렉터로 판단한다.
+                        await page.GotoAsync(url, new PageGotoOptions
+                        {
+                            WaitUntil = WaitUntilState.DOMContentLoaded,
+                            Timeout = 60000
+                        });
+                        await page.WaitForSelectorAsync("table tbody tr", new PageWaitForSelectorOptions { Timeout = 20000 });
+                        loaded = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($" - {p}페이지 로딩 실패 ({attempt}/3): {ex.GetType().Name}");
+                        if (attempt < 3) await Task.Delay(3000 * attempt);
+                    }
                 }
-                catch
-                {
-                    Console.WriteLine($" - {p}페이지 로딩 실패 또는 데이터 없음");
-                    break;
-                }
+                if (!loaded) break;
 
                 var rows = await page.QuerySelectorAllAsync("table tbody tr");
-                if (rows.Count == 0 || (await rows[0].InnerTextAsync()).Contains("데이터가 없습니다")) break;
+                int dataRows = 0;
 
                 foreach (var row in rows)
                 {
                     var cols = await row.QuerySelectorAllAsync("td");
+                    // 페이지 상단 검색 필터도 table이라 td 4개 이상인 행만 데이터로 본다.
                     if (cols.Count >= 4)
                     {
                         string rankText = (await cols[0].InnerTextAsync()).Trim();
@@ -79,13 +97,25 @@ class Program
                             Level = int.TryParse(levelText, out int l) ? l : 0,
                             Essence = long.TryParse(essenceText, out long e) ? e : 0
                         });
+                        dataRows++;
                     }
                 }
-                Console.WriteLine($" - {p}페이지 완료 (누적 {db.Rankings.Count}명)");
-                if (rows.Count < 100) break;
+
+                collectedForCode += dataRows;
+                Console.WriteLine($" - {p}페이지 완료 (데이터 {dataRows}행, 누적 {db.Rankings.Count}명)");
+                if (dataRows < 100) break;
                 await Task.Delay(500);
             }
+
+            if (collectedForCode == 0)
+            {
+                Console.WriteLine($"::warning::캐릭터 코드 {cc} 수집 결과가 0건입니다.");
+                emptyCodes.Add(cc);
+            }
         }
+
+        if (emptyCodes.Count > 0)
+            Console.WriteLine($"::warning::데이터가 비어있는 캐릭터 코드: {string.Join(", ", emptyCodes)}");
 
         // 2. 저장 경로 설정 (여기가 핵심 수정 부분입니다!)
         string fileName = "eta_ranking.json";
