@@ -61,9 +61,24 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
-            exit 0
+          else
+            git commit -m "Auto-update: $(date +'%Y-%m-%d')"
           fi
 
-          git commit -m "Auto-update: $(date +'%Y-%m-%d')"
           git pull --rebase origin main
+
+          # 날짜 → 커밋 SHA 인덱스 갱신 (해당 날짜의 eta_ranking.json이 담긴 커밋)
+          TODAY=$(date +'%Y-%m-%d')
+          SHA=$(git rev-parse HEAD)
+          [ -f ranking_index.json ] || echo '{}' > ranking_index.json
+          jq --arg d "$TODAY" --arg s "$SHA" '.[$d] = $s' ranking_index.json > tmp_index.json
+          mv tmp_index.json ranking_index.json
+          git add ranking_index.json
+
+          if git diff --cached --quiet; then
+            echo "Index unchanged"
+          else
+            git commit -m "Index: $TODAY"
+          fi
+
           git push origin HEAD:main
