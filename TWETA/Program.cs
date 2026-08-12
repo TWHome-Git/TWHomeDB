@@ -8,7 +8,7 @@ class Program
     public class EtaRankingDb
     {
         public string CollectDate { get; set; } = string.Empty;
-        public List<RankingItem> Rankings { get; set; } = new();
+        public Dictionary<string, List<RankingItem>> Servers { get; set; } = new();
     }
 
     public class RankingItem
@@ -39,78 +39,89 @@ class Program
         var page = await context.NewPageAsync();
 
         var db = new EtaRankingDb { CollectDate = DateTime.Now.ToString("yyyy-MM-dd") };
-        var emptyCodes = new List<int>();
+        var servers = new (int Sc, string Name)[]
+        {
+            (7, "하이아칸"),
+            (16, "네냐플")
+        };
+        var emptyCodes = new List<string>();
 
         // 수집 로직
-        for (int cc = 0; cc <= 18; cc++)
+        foreach (var (sc, serverName) in servers)
         {
-            Console.WriteLine($"캐릭터 코드 {cc} 수집 시작...");
-            int collectedForCode = 0;
+            var rankings = new List<RankingItem>();
+            db.Servers[serverName] = rankings;
 
-            for (int p = 1; p <= 50; p++)
+            for (int cc = 0; cc <= 18; cc++)
             {
-                string url = $"https://tales.nexon.com/Community/Ranking/EtaRank?sc=7&cc={cc}&pagesize=100&page={p}";
+                Console.WriteLine($"[{serverName}] 캐릭터 코드 {cc} 수집 시작...");
+                int collectedForCode = 0;
 
-                // 일시적인 로딩 실패로 캐릭터 전체를 버리지 않도록 재시도한다.
-                bool loaded = false;
-                for (int attempt = 1; attempt <= 3 && !loaded; attempt++)
+                for (int p = 1; p <= 50; p++)
                 {
-                    try
+                    string url = $"https://tales.nexon.com/Community/Ranking/EtaRank?sc={sc}&cc={cc}&pagesize=100&page={p}";
+
+                    // 일시적인 로딩 실패로 캐릭터 전체를 버리지 않도록 재시도한다.
+                    bool loaded = false;
+                    for (int attempt = 1; attempt <= 3 && !loaded; attempt++)
                     {
-                        // NetworkIdle은 이 사이트에서 도달하지 않는다(트래킹 비콘이 계속 돈다).
-                        // DOMContentLoaded로 받고, 실제 준비 여부는 셀렉터로 판단한다.
-                        await page.GotoAsync(url, new PageGotoOptions
+                        try
                         {
-                            WaitUntil = WaitUntilState.DOMContentLoaded,
-                            Timeout = 60000
-                        });
-                        await page.WaitForSelectorAsync("table tbody tr", new PageWaitForSelectorOptions { Timeout = 20000 });
-                        loaded = true;
+                            // NetworkIdle은 이 사이트에서 도달하지 않는다(트래킹 비콘이 계속 돈다).
+                            // DOMContentLoaded로 받고, 실제 준비 여부는 셀렉터로 판단한다.
+                            await page.GotoAsync(url, new PageGotoOptions
+                            {
+                                WaitUntil = WaitUntilState.DOMContentLoaded,
+                                Timeout = 60000
+                            });
+                            await page.WaitForSelectorAsync("table tbody tr", new PageWaitForSelectorOptions { Timeout = 20000 });
+                            loaded = true;
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($" - {p}페이지 로딩 실패 ({attempt}/3): {ex.GetType().Name}");
+                            if (attempt < 3) await Task.Delay(3000 * attempt);
+                        }
                     }
-                    catch (Exception ex)
+                    if (!loaded) break;
+
+                    var rows = await page.QuerySelectorAllAsync("table tbody tr");
+                    int dataRows = 0;
+
+                    foreach (var row in rows)
                     {
-                        Console.WriteLine($" - {p}페이지 로딩 실패 ({attempt}/3): {ex.GetType().Name}");
-                        if (attempt < 3) await Task.Delay(3000 * attempt);
+                        var cols = await row.QuerySelectorAllAsync("td");
+                        // 페이지 상단 검색 필터도 table이라 td 4개 이상인 행만 데이터로 본다.
+                        if (cols.Count >= 4)
+                        {
+                            string rankText = (await cols[0].InnerTextAsync()).Trim();
+                            string nameText = (await cols[1].InnerTextAsync()).Trim();
+                            string levelText = (await cols[2].InnerTextAsync()).Trim();
+                            string essenceText = (await cols[3].InnerTextAsync()).Trim().Replace(",", "");
+
+                            rankings.Add(new RankingItem
+                            {
+                                CharacterCode = cc,
+                                Rank = int.TryParse(rankText, out int r) ? r : 0,
+                                UserId = ExtractId(nameText),
+                                Level = int.TryParse(levelText, out int l) ? l : 0,
+                                Essence = long.TryParse(essenceText, out long e) ? e : 0
+                            });
+                            dataRows++;
+                        }
                     }
+
+                    collectedForCode += dataRows;
+                    Console.WriteLine($" - {p}페이지 완료 (데이터 {dataRows}행, 누적 {rankings.Count}명)");
+                    if (dataRows < 100) break;
+                    await Task.Delay(500);
                 }
-                if (!loaded) break;
 
-                var rows = await page.QuerySelectorAllAsync("table tbody tr");
-                int dataRows = 0;
-
-                foreach (var row in rows)
+                if (collectedForCode == 0)
                 {
-                    var cols = await row.QuerySelectorAllAsync("td");
-                    // 페이지 상단 검색 필터도 table이라 td 4개 이상인 행만 데이터로 본다.
-                    if (cols.Count >= 4)
-                    {
-                        string rankText = (await cols[0].InnerTextAsync()).Trim();
-                        string nameText = (await cols[1].InnerTextAsync()).Trim();
-                        string levelText = (await cols[2].InnerTextAsync()).Trim();
-                        string essenceText = (await cols[3].InnerTextAsync()).Trim().Replace(",", "");
-
-                        db.Rankings.Add(new RankingItem
-                        {
-                            CharacterCode = cc,
-                            Rank = int.TryParse(rankText, out int r) ? r : 0,
-                            UserId = ExtractId(nameText),
-                            Level = int.TryParse(levelText, out int l) ? l : 0,
-                            Essence = long.TryParse(essenceText, out long e) ? e : 0
-                        });
-                        dataRows++;
-                    }
+                    Console.WriteLine($"::warning::[{serverName}] 캐릭터 코드 {cc} 수집 결과가 0건입니다.");
+                    emptyCodes.Add($"{serverName}/cc={cc}");
                 }
-
-                collectedForCode += dataRows;
-                Console.WriteLine($" - {p}페이지 완료 (데이터 {dataRows}행, 누적 {db.Rankings.Count}명)");
-                if (dataRows < 100) break;
-                await Task.Delay(500);
-            }
-
-            if (collectedForCode == 0)
-            {
-                Console.WriteLine($"::warning::캐릭터 코드 {cc} 수집 결과가 0건입니다.");
-                emptyCodes.Add(cc);
             }
         }
 
