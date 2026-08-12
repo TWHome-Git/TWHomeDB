@@ -57,6 +57,7 @@ jobs:
           fi
 
           git add eta_ranking.json
+          [ -f eta_history.json ] && git add eta_history.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit"

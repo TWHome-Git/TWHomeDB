@@ -11,6 +11,20 @@ class Program
         public Dictionary<string, List<RankingItem>> Servers { get; set; } = new();
     }
 
+    // 서버 → 캐릭터 → 날짜 → 인원수 누적 기록
+    public class EtaHistoryDb
+    {
+        public Dictionary<string, Dictionary<string, Dictionary<string, int>>> Servers { get; set; } = new();
+    }
+
+    // 사이트 랭킹 페이지의 cc 파라미터 순서 (가나다순 아님)
+    private static readonly string[] CharacterNames =
+    {
+        "루시안", "보리스", "막시민", "시벨린", "조슈아", "란지에", "이자크",
+        "밀라", "티치엘", "이스핀", "나야트레이", "아나이스", "클로에",
+        "벤야", "이솔렛", "로아미니", "녹턴", "리체", "예프넨"
+    };
+
     public class RankingItem
     {
         public int CharacterCode { get; set; }
@@ -153,6 +167,50 @@ class Program
         // 지정된 경로에 파일 쓰기
         await File.WriteAllTextAsync(filePath, jsonString, Encoding.UTF8);
         Console.WriteLine($"최종 파일 저장 위치: {Path.GetFullPath(filePath)}");
+
+        // 3. 캐릭터별 인원수 히스토리 갱신 (기존 파일에 오늘 날짜를 누적)
+        string historyFileName = "eta_history.json";
+        string historyPath = isGithubActions
+            ? Path.Combine(Directory.GetCurrentDirectory(), historyFileName)
+            : historyFileName;
+
+        var history = new EtaHistoryDb();
+        if (File.Exists(historyPath))
+        {
+            try
+            {
+                history = JsonSerializer.Deserialize<EtaHistoryDb>(await File.ReadAllTextAsync(historyPath))
+                          ?? new EtaHistoryDb();
+            }
+            catch (JsonException ex)
+            {
+                // 손상된 히스토리를 빈 파일로 덮어쓰면 누적 기록 전체를 잃는다.
+                Console.WriteLine($"::error::{historyFileName} 파싱 실패, 히스토리 갱신을 건너뜁니다: {ex.Message}");
+                return;
+            }
+        }
+
+        foreach (var (serverName, rankings) in db.Servers)
+        {
+            if (!history.Servers.TryGetValue(serverName, out var characters))
+            {
+                characters = new Dictionary<string, Dictionary<string, int>>();
+                history.Servers[serverName] = characters;
+            }
+
+            for (int cc = 0; cc < CharacterNames.Length; cc++)
+            {
+                if (!characters.TryGetValue(CharacterNames[cc], out var dates))
+                {
+                    dates = new Dictionary<string, int>();
+                    characters[CharacterNames[cc]] = dates;
+                }
+                dates[db.CollectDate] = rankings.Count(r => r.CharacterCode == cc);
+            }
+        }
+
+        await File.WriteAllTextAsync(historyPath, JsonSerializer.Serialize(history, jsonOptions), Encoding.UTF8);
+        Console.WriteLine($"히스토리 저장 위치: {Path.GetFullPath(historyPath)}");
     }
 
     private static string ExtractId(string rawText)
