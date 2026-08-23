@@ -1,8 +1,8 @@
 {
   "version": 1,
   "resources": {
-    "EquipmentData.json": 7,
+    "EquipmentData.json": 8,
     "BossTimer.json": 2,
-    "DropItem.Json": 1
+    "DropItem.Json": 2
   }
 }
