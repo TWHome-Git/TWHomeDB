@@ -1,0 +1,6 @@
+# 로컬 빌드 산출물 (액션은 러너에서 새로 빌드함)
+TWETA/bin/
+TWETA/obj/
+
+# 로컬 실행 시 프로젝트 폴더에 생기는 결과물 (저장소 루트의 eta_ranking.json만 액션이 커밋)
+TWETA/eta_ranking.json
