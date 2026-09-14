@@ -4,3 +4,6 @@ TWETA/obj/
 
 # 로컬 실행 시 프로젝트 폴더에 생기는 결과물 (저장소 루트의 eta_ranking.json만 액션이 커밋)
 TWETA/eta_ranking.json
+
+# 세션 작업 기록 (로컬 전용)
+SESSION_HISTORY.md
