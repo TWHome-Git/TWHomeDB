@@ -16,8 +16,6 @@ class Program
     // 서버 → 캐릭터 → 날짜 → 인원수 누적 기록
     public class EtaHistoryDb
     {
-        // 수집일 → 그날 사이트의 Last Update 값 (eta_ranking.json은 덮어써지므로 여기 누적)
-        public Dictionary<string, string> LastUpdate { get; set; } = new();
         public Dictionary<string, Dictionary<string, Dictionary<string, int>>> Servers { get; set; } = new();
     }
 
@@ -241,9 +239,6 @@ class Program
                 return;
             }
         }
-
-        if (db.LastUpdate != null)
-            history.LastUpdate[db.CollectDate] = db.LastUpdate;
 
         foreach (var (serverName, rankings) in db.Servers)
         {
