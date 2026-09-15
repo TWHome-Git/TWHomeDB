@@ -223,6 +223,12 @@ class Program
         await File.WriteAllTextAsync(filePath, jsonString, Encoding.UTF8);
         Console.WriteLine($"최종 파일 저장 위치: {Path.GetFullPath(filePath)}");
 
+        // 갱신 시각만 담은 작은 파일. TWPage 홈처럼 랭킹 전체(약 1MB)가 필요 없는 곳에서 이것만 받는다.
+        string metaPath = Path.Combine(Path.GetDirectoryName(Path.GetFullPath(filePath))!, "eta_meta.json");
+        var meta = new { db.CollectDate, db.LastUpdate };
+        await File.WriteAllTextAsync(metaPath, JsonSerializer.Serialize(meta, jsonOptions), Encoding.UTF8);
+        Console.WriteLine($"메타 파일 저장 위치: {metaPath}");
+
         // 5. 캐릭터별 인원수 히스토리 갱신 (기존 파일에 오늘 날짜를 누적)
         var history = new EtaHistoryDb();
         if (File.Exists(historyPath))
