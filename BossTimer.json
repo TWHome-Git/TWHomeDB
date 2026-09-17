@@ -1,5 +1,6 @@
 {
-  "version": 5,
+  "version": 6,
+  "holidays": ["2026-09-24", "2026-09-25"],
   "bosses": [
     {
       "id": "Arkan",
@@ -8,7 +9,12 @@
       "enabledByDefault": false,
       "schedule": {
         "type": "fixed",
-        "times": ["14:30", "21:30", "22:00"]
+        "times": ["14:30", "21:30", "22:00"],
+        "rules": [
+          { "times": ["14:30", "21:30"] },
+          { "label": "축제", "times": ["22:00"], "from": "2026-09-17", "until": "2026-10-22T08:00" },
+          { "label": "축제", "times": ["15:00"], "days": ["weekend", "holiday"], "from": "2026-09-17", "until": "2026-10-22T08:00" }
+        ]
       }
     },
     {
@@ -18,7 +24,12 @@
       "enabledByDefault": false,
       "schedule": {
         "type": "fixed",
-        "times": ["01:00", "04:00", "08:00", "16:00", "19:00", "22:30", "23:00", "23:30"]
+        "times": ["01:00", "04:00", "08:00", "16:00", "19:00", "22:30", "23:00", "23:30"],
+        "rules": [
+          { "times": ["01:00", "04:00", "08:00", "16:00", "19:00", "23:00"] },
+          { "label": "축제", "times": ["22:30", "23:30"], "from": "2026-09-17", "until": "2026-10-22T08:00" },
+          { "label": "축제", "times": ["17:00"], "days": ["weekend", "holiday"], "from": "2026-09-17", "until": "2026-10-22T08:00" }
+        ]
       }
     },
     {
@@ -28,7 +39,12 @@
       "enabledByDefault": false,
       "schedule": {
         "type": "fixed",
-        "times": ["00:30", "11:00", "19:30", "20:00", "20:30"]
+        "times": ["00:30", "11:00", "19:30", "20:00", "20:30"],
+        "rules": [
+          { "times": ["00:30", "11:00", "20:00"] },
+          { "label": "축제", "times": ["19:30", "20:30"], "from": "2026-09-17", "until": "2026-10-22T08:00" },
+          { "label": "축제", "times": ["11:30"], "days": ["weekend", "holiday"], "from": "2026-09-17", "until": "2026-10-22T08:00" }
+        ]
       }
     },
     {
@@ -42,14 +58,14 @@
       }
     },
     {
-    "id": "event",
-    "name": "이벤트",
-    "category": "event",
-    "enabledByDefault": false,
-    "schedule": {
-    "type": "hourly",
-    "minute": 10
-  }
-}
+      "id": "event",
+      "name": "이벤트",
+      "category": "event",
+      "enabledByDefault": false,
+      "schedule": {
+        "type": "hourly",
+        "minute": 10
+      }
+    }
   ]
 }
