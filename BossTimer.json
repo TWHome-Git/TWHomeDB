@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "holidays": ["2026-09-24", "2026-09-25"],
   "bosses": [
     {
@@ -64,7 +64,9 @@
       "enabledByDefault": false,
       "schedule": {
         "type": "hourly",
-        "minute": 10
+        "minute": 50,
+        "minutes": [20, 50],
+        "entryMinutes": 10
       }
     }
   ]
