@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "bosses": [
     {
       "id": "Arkan",
@@ -51,22 +51,5 @@
     "minute": 10
   }
 }
-  ],
-  "events": [
-    {
-      "id": "festival-2026-09",
-      "name": "축제",
-      "from": "2026-09-17",
-      "to": "2026-10-22 08:00",
-      "holidays": ["2026-09-24", "2026-09-25"],
-      "additions": [
-        { "bossId": "Origin of Doom", "days": "all",     "times": ["19:30", "20:30"] },
-        { "bossId": "Origin of Doom", "days": "weekend", "times": ["11:30"] },
-        { "bossId": "Arkan",          "days": "all",     "times": ["22:00"] },
-        { "bossId": "Arkan",          "days": "weekend", "times": ["15:00"] },
-        { "bossId": "Scherzendo",     "days": "all",     "times": ["22:30", "23:30"] },
-        { "bossId": "Scherzendo",     "days": "weekend", "times": ["17:00"] }
-      ]
-    }
   ]
 }
