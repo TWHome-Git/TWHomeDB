@@ -1,13 +1,12 @@
 # 매일 사이트의 "Last Update"가 바뀐 직후 에타 랭킹을 수집해 커밋한다.
 #
-# 사이트는 보통 08:00~08:30 KST 사이에 갱신되므로 08:00 KST(23:00 UTC)에 시작해
-# 5분 간격으로 Last Update를 확인하고, 바뀌면 그때 수집한다(ETA_WAIT_FOR_UPDATE=1, 최대 4시간).
-# 수동/외부 호출 실행은 기다리지 않고, Last Update가 마지막 수집분과 같으면 건너뛴다.
+# 실행은 외부 크론(cron-job.org "TWETA Update" → repository_dispatch: manual-update)이 매일 08:00 KST에 건다.
+# GitHub schedule은 매일 2시간쯤 밀려 시작돼(08:00 지정 → 실제 10시경) 쓰지 않는다.
+# 사이트는 보통 08:00~08:30 KST에 갱신되므로 5분 간격으로 Last Update를 확인하고, 바뀌면 그때 수집한다(최대 4시간).
+# 화면에서 직접 돌리는 workflow_dispatch만 기다리지 않고, Last Update가 마지막 수집분과 같으면 건너뛴다.
 name: Daily Data Update
 
 on:
-  schedule:
-    - cron: "0 23 * * *"   # 08:00 KST
   repository_dispatch:
     types: [manual-update]
   workflow_dispatch:
@@ -32,7 +31,7 @@ jobs:
     timeout-minutes: 330
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-      ETA_WAIT_FOR_UPDATE: ${{ github.event_name == 'schedule' && '1' || '0' }}
+      ETA_WAIT_FOR_UPDATE: ${{ github.event_name == 'workflow_dispatch' && '0' || '1' }}
       ETA_POLL_INTERVAL_MIN: "5"
       ETA_WAIT_MAX_MIN: "240"
       ETA_FORCE: ${{ inputs.force == true && '1' || '0' }}
