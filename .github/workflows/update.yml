@@ -107,3 +107,23 @@ jobs:
           fi
 
           git push origin HEAD:main
+
+      # 랭킹이 올라간 직후 TWPage의 에타 집계(인구 추이·진입·이탈·아이디별 기록)를 바로 돌린다.
+      # 기본 토큰으로는 다른 저장소를 건드릴 수 없어서, TWPage에 쓰기 권한이 있는 토큰을
+      # 저장소 비밀값 TWPAGE_DISPATCH_TOKEN에 넣어 둬야 한다. 없으면 건너뛰고 TWPage 쪽 예약 실행에 맡긴다.
+      - name: TWPage 에타 집계 호출
+        shell: bash
+        env:
+          TOKEN: ${{ secrets.TWPAGE_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "TWPAGE_DISPATCH_TOKEN이 없어 TWPage 호출을 건너뜁니다."
+            exit 0
+          fi
+          code=$(curl -s -o /dev/null -w '%{http_code}' -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $TOKEN" \
+            https://api.github.com/repos/TWHome-Git/TWPage/dispatches \
+            -d '{"event_type":"eta-updated"}')
+          echo "TWPage 호출 응답: $code"
+          [ "$code" = "204" ] || echo "::warning::TWPage 호출에 실패했습니다 (HTTP $code). TWPage 쪽 예약 실행이 대신 돕니다."
