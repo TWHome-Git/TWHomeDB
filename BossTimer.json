@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "holidays": ["2026-09-24", "2026-09-25"],
   "bosses": [
     {
@@ -57,6 +57,17 @@
         "type": "fixed",
         "times": ["00:00", "07:00", "13:00", "18:00", "21:00"],
         "entryMinutes": 4
+      }
+    },
+    {
+      "id": "event",
+      "name": "이벤트",
+      "category": "event",
+      "enabledByDefault": false,
+      "schedule": {
+        "type": "hourly",
+        "minute": 40,
+        "minutes": [10, 40]
       }
     }
   ]
